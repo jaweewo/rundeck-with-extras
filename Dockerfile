@@ -1,4 +1,4 @@
-FROM rundeck/rundeck:4.3.0
+FROM rundeck/rundeck:4.3.1
 USER root
 RUN apt update && apt-get install wget software-properties-common lsb-core unzip git -y &&  apt update
 RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
