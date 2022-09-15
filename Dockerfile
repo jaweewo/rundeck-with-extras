@@ -11,4 +11,5 @@ RUN  python3 get-pip.py --user
 RUN python3 -m pip -V
 RUN python3 -m pip install --user ansible
 WORKDIR /root
+RUN find . | grep ansible
 RUN ansible --version
