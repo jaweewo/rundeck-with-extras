@@ -10,3 +10,4 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN  python3 get-pip.py --user
 RUN python3 -m pip -V
 RUN python3 -m pip install --user ansible
+RUN ansible --version
